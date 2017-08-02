@@ -1,5 +1,5 @@
 # Usually, only these lines need changing
-TEXFILE= RobHyndmanCV
+TEXFILE= SamsaraCountsCV
 BIBFILES := $(wildcard *.bib)
 
 all: $(TEXFILE).pdf

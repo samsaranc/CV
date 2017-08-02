@@ -1,0 +1,379 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{cv,booktabs,fontawesome}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Change color to blue
+\def\headcolor{\color[rgb]{0,0,0.5}}
+
+% Space before section headings
+\titlespacing{\section}{0pt}{3ex}{1ex}
+
+\name{Samsara Counts}
+
+\info{
+% \faicon{map-marker} & Department of Econometrics \& Business
+%                                Statistics, Monash University, VIC 3800, Australia.\\
+      \faicon{home}       & samsaranc.github.io\\
+      \faicon{phone}      & +1 817 994 9732\\
+      \faicon{envelope}   & samsaranc@gmail.com\\
+      \faicon{twitter}    & @samsaranc\\
+      \faicon{github}     & samsaranc}
+
+\bibliography{sncpubs,sncreports}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex, overwrite]{
+    \map{
+      \step[fieldset=month, null]
+    }
+  }
+}
+
+% Use useprefix because of Ashton de Silva
+\ExecuteBibliographyOptions{useprefix=true}
+
+\usepackage[sfdefault,lf,t]{carlito}
+\renewcommand{\bibfont}{\normalfont\fontsize{10}{12.4}\sffamily}
+\usepackage{inconsolata}
+
+\makebibcategory{reports}{Statistical consulting reports}
+\makebibcategory{nonstat}{Poetry}
+\makebibcategory{inprogress}{Working papers}
+
+
+\addtocategory{books}{
+  MWH3,
+  ITSM91,
+  ITSM94,
+  expsmooth08,
+  fpp,
+  unbelievable}
+
+\addtocategory{papers}{
+  BHG91,
+  BH92,
+  YW93,
+  Hyndman94,
+  HDRF95,
+  HDR96,
+  HBG96,
+  HF96,
+  GHH97,
+  HW97,
+  LFSH97,
+  GH98,
+  FHV00,
+  GHTT00,
+  HG00,
+  BH01,
+  EH01,
+  Hyndman01,
+  lemmings,
+  CHW02,
+  HKSG02,
+  HY02,
+  RH02,
+  HH03,
+  HB03,
+  RLH03,
+  HHF04,
+  Hyndman04,
+  SHW04,
+  SKHO04,
+  BHK05,
+  EH05,
+  HKPB05,
+  HKOS05,
+  SH05,
+  ijf25,
+  NPS06,
+  Hyndman06,
+  HK06,
+  KH06,
+  MH06,
+  WSH06,
+  ZKH06,
+  LCcomparison,
+  YH06,
+  KSH07,
+  EHG07,
+  HU07,
+  NPS07,
+  shortseasonal,
+  pollen07,
+  Gould08,
+  MBH08,
+  HAA08,
+  austourism,
+  HB08,
+  HK08,
+  hiertourism,
+  WSH09,
+  AHO09,
+  dSHS09,
+  OKSH09,
+  HS09,
+  HS10,
+  HF10,
+  VHNC10,
+  EAGE+10,
+  VISTS10,
+  YHE10,
+  VHZC10,
+  KH10,
+  SH11,
+  Pearce10b,
+  longrun,
+  FH10b,
+  AH11,
+  hierarchical,
+  AHSW11,
+  SBH11,
+  Pearce10a,
+  DHS11,
+  Carta2011,
+  HBY13,
+  EUHSA12,
+  FH11,
+  mapcah12,
+  gefcom,
+  foresight14,
+  acfplots14,
+  fungal14,
+  jaci2015,
+  lagphase,
+  baggedETS,
+  dynamicpareto,
+  gefcom2014,
+  fasthts,
+  smart-meter-quantiles,
+  Tham2016,
+  m3pca,
+  hfts,
+  pearce2016exploring,
+  handguns,
+  fvanaive,
+  temporal-hierarchies,
+}
+
+\addtocategory{chapters}{
+  AGH95,
+  ISGMS02a,
+  ISGMS02b,
+  ISGMS02c,
+  HS08,
+  IESS10a,
+  IESS10b,
+  IESS10c,
+  BHT14,
+  saschapter,
+  saschapter2,
+  sampling-multiobjective-optimization}
+
+\addtocategory{conferences}{
+  NAGS86,
+  ESAM99,
+  IWSM01,
+  ISI05,
+  WSH05,
+  SH09,
+  laura1,
+  Han10,
+  FH10,
+  boostingar,
+  epic,
+  iwfos14,
+  cikm2015,
+  probhts,
+  }
+
+\addtocategory{inprogress}{
+  bivarridges,
+  ropes,
+  tscv,
+  str,
+  kdd2015,
+  participationrates,
+  mint,
+  BayesianRankVAR,
+  ausmacrodata,
+  ausmacrofcast}
+
+\addtocategory{bookreviews}{
+  BR96,
+  BR98a,
+  BR98b,
+  BR99a,
+  BR99b,
+  BR99c,
+  BR00,
+  EH05a}
+
+\addtocategory{editorials}{
+  IJFeditorial05,
+  IJFeditorial06,
+  IJFeditorial10a,
+  IJFeditorial10b,
+  tourismeditorial11,
+  hyndman2015change,
+  usertalk11,
+  IJFeditorial13,
+  hyndman2015new}
+
+\addtocategory{phd}{phd}
+
+\addtocategory{software}{
+  Raddb,
+  Ranomalous,
+  Rbfast,
+  Rdemography,
+  Reechidna,
+  Remma,
+  Rexpsmooth,
+  Rfds,
+  Rfma,
+  Rforecast,
+  Rfpp,
+  Rftsa,
+  Rhdrcde,
+  Rhts,
+  RMcomp,
+  RMEFM,
+  Rrainbow,
+  RsmoothAPC,
+  RstR,
+  Rthief,
+}
+
+\begin{document}
+\maketitle
+
+\section{Education}
+
+~\begin{tabular}{lll}
+1988 & B.Sc.(Hons) & University of Melbourne %\\
+% 1992 & Ph.D. & University of Melbourne\\
+% 2000 & A.Stat. & Statistical Society of Australia.
+\end{tabular}
+
+
+\section{Current positions}
+
+~\begin{tabular}{lP{15cm}}
+2003--& \textbf{Professor of Statistics},
+        Department of Econometrics \& Business Statistics, Monash University.\\
+2005--& \textbf{Director},
+        International Institute of Forecasters.\\
+2005--& \textbf{Editor-in-Chief},
+        \textit{International Journal of Forecasting}.\\
+2011--& \textbf{Editor}, \textit{Journal of Statistical Software}.\\
+%2001--& \textbf{Director, Business \& Economic Forecasting Unit},
+%        Department of Econometrics \& Business Statistics, Monash University.\\
+1999--& \textbf{Director of Consulting},
+        Department of Econometrics \& Business Statistics, Monash University.
+\end{tabular}
+
+
+
+\section{Honors and awards}
+
+~\begin{tabular}{ll}
+%2017 & Visiting Expert Professor, Chinese Academy of Sciences, Beijing, China.\\
+2016 & KNAW Visiting Professor, TU/Eindhoven, Netherlands.\\
+2010 & Dean's Award for excellence in innovation and external collaboration, Monash University.\\
+2010 & HP Innovation Research Award.\\
+1986 & Second Maurice H.\ Belz Prize in Statistics, University of Melbourne
+\end{tabular}
+
+\section{Membership of Associations}
+
+~\begin{tabular}{@{~$\bullet$~~}l}
+Member, Association for Computing Machinery\\
+Member, American Mathematical Society\\
+\end{tabular}
+
+\section{Research}
+
+\begin{itemize}\parskip=0cm
+% \item Since 1991 I have authored \ref{sumpapers} papers, chapters or books on statistical topics. A list of these appears on pages \pageref{papersstart}--\pageref{papersend}.
+\item I have received several awards for my research including the 2007 Moran Medal from the Australian Academy of Science.
+\item  My current research projects include forecasting electricity demand, forecasting large collections of time series, and strategies for improving forecasts through bagging and boosting.
+\item In 2008 I won the Monash Vice-Chancellor's award for postgraduate supervisor of the year.
+% \item I have produced \ref{sumsoftware} R packages as a result of my research. These are listed on page~\pageref{sumsoftware}.
+\end{itemize}
+
+\clearpage
+
+\section{Grants}
+I have acquired (in most cases jointly) about \$4 million in external research grants since 2000.\vspace*{0.3cm}
+
+{\def\next{\\\\[-0.2cm]}\fontsize{10}{12pt}\selectfont
+\begin{tabular}{@{}lP{13.3cm}r@{}}
+% \toprule
+2009 & Choi, C., R.J. Hyndman, L. Smith and K. Zhao ``An enhanced mortality database for estimating indigenous life expectancy: a feasibility study.'' \emph{Funding from the Australian Institute of Health and Welfare.} &\$10,500
+\next
+2009--2011 & Erbas, B., Abramson, M., Tang, M., Allen, K., Newbigin, E., Dharmage, S., Hyndman, R.J. ``The impact of outdoor aeroallergen exposure on asthma exacerbations in children and adolescents''. \emph{Funding from the National Health and Medical Research Council.} &\$454,550
+% \bottomrule
+\end{tabular}}
+
+\clearpage
+
+\section{Major invited talks}
+
+\begin{compactitem}\itemsep=0.1cm
+\item Belz lecture, \emph{Forecasting and the importance of being uncertain}, Statistical Society of Australia, Melbourne, October 2006.
+\item Knibbs lecture, \emph{Population forecasting and the importance of being uncertain}, Statistical Society of Australia, Melbourne, November 2007.
+\item Invited speaker, \emph{Advances in automatic time series forecasting}, Australian Statistics Conference, Adelaide, July 2012.
+\end{compactitem}
+
+
+\section{Teaching}
+
+\begin{compactitem}\itemsep=0.1cm
+
+\item In 1998, I received the award for ``Excellence in teaching'' by the Monash Science Society. This is awarded by the students of the Science faculty.
+
+\end{compactitem}
+
+\section{Advisory boards}
+
+%I am on several scientific advisory boards for external organizations:
+\begin{compactitem}
+\item Member of the Scaling committee, Victorian Tertiary Admissions Centre. This committee is responsible for producing the ATAR for VCE students.
+\item Member of the Methodology Advisory Committee for the Australian Bureau of Statistics.
+\end{compactitem}
+
+
+\newpage
+\setlength{\bibitemsep}{1.8pt}
+
+\begin{publications}
+\printbib{phd}
+\printbib{books}
+\printbib{papers}
+\printbib{chapters}
+\printbib{conferences}
+\printbib{inprogress}
+\printbib{bookreviews}
+\printbib{editorials}
+\end{publications}
+
+%\pagebreak
+
+% Consulting reports
+\setcounter{sumpapers}{0}
+\label{consulting}
+\printbibliography[heading=reports,type=report,keyword=consulting]%
+\lastref{sumpapers}\addtocounter{sumpapers}{-1}%
+\refstepcounter{sumpapers}\label{sumreports}
+
+% Software
+\newpage
+\setcounter{sumpapers}{0}
+\newrefcontext[sorting=ty]
+\printbibliography[category=software,heading=software]\lastref{sumpapers}
+\addtocounter{sumpapers}{-1}
+\refstepcounter{sumpapers}\label{sumsoftware}
+
+\end{document}
