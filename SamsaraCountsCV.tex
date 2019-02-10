@@ -20,7 +20,8 @@
 %      \faicon{twitter}    & @samsaranc\\
       \faicon{github}     & samsaranc}
 
-\bibliography{sncpubs.bib,sncreports}
+\bibliography{sncpubs}
+%sncreports
 
 \DeclareSourcemap{
   \maps[datatype=bibtex, overwrite]{
@@ -37,24 +38,28 @@
 \renewcommand{\bibfont}{\normalfont\fontsize{10}{12.4}\sffamily}
 \usepackage{inconsolata}
 
-\makebibcategory{poetry}{Poetry}
-\makebibcategory{inprogress}{Working papers}
+%\makebibcategory{poetry}{Poetry}
+%\makebibcategory{inprogress}{Working papers}
 
 
-\addtocategory{papers}{
-	Cohort19,
-	aipr2018
+\addtocategory{conferences}{
+	cohort19
   }
 
-\addtocategory{inprogress}{
-  bivarridges,
-  ropes
+\addtocategory{ws}{
+  aipr2018,
+  amia2017
   }
+
+%\addtocategory{inprogress}{
+%  bivarridges,
+%  ropes
+%  }
   
- \addtocategory{poetry}{
-  BH92,
-  YW93
-  }
+% \addtocategory{poetry}{
+%  BH92,
+%  YW93
+%  }
 
 
 \begin{document}
@@ -62,12 +67,13 @@
 
 \section{Education}
 
-~\begin{tabular}{lll}
-May 2019 & B.S. in Computer Science and Mathematics & George Washington University %\\
+~\begin{tabular}{llll}
+2019 & B.Sc. & George Washington University & Computer Science and Mathematics
+
 \end{tabular}
 
 
-\section{Positions}
+\section{Research Experience}
 
 %~\begin{tabular}{lP{15cm}}
 %2003--& \textbf{Professor of Statistics},
@@ -75,30 +81,34 @@ May 2019 & B.S. in Computer Science and Mathematics & George Washington Universi
 %1999--& \textbf{Director of Consulting},
 %        Department of Econometrics \& Business Statistics, Monash University.
 %\end{tabular}
+
+\subsection{George Washington University | \emph{Research Assistant} | \text{Fall 2017-Present} }
+~\begin{tabular}{@{~$\bullet$~~}l}
+Use deep learning to recognize images of Eating Disorders and build tools to improve patient health outcomes. \\
+Use notions of geometric and combinatorial diversity to improve classifier test and training accuracy.\\
+\end{tabular}
+
 \subsection{Microsoft Research |  \emph{Intern} | \text{Summer 2018}}
 ~\begin{tabular}{@{~$\bullet$~~}l}
-
+Used group theory to speed up matrix multiplication algorithms\\
+Solved an optimization problem over the search space of finite groups. \\
+Implemented and designed abstract algebraic algorithms in GAP. \\
 \end{tabular}
-% \location{| Cambridge, MA}
-
 
 \subsection{University of Maryland College Park | \emph{Researcher} | \text{Summer 2017} }
 ~\begin{tabular}{@{~$\bullet$~~}l}
-Did research with %\textbf{\href{http://jpdickerson.com}{
-John P. Dickerson funded by the National Science Foundation at the Combinatorics and\\ 
-Algorithms for Real Problems REU (7\% acceptance rate)
+Designed a multi-armed bandit algorithm to ensure diversity and fairness in an automated admissions process\\
+Analyzed past admissions data to investigate the possibility of bias in previous decisions \\
+Designed a system using deep Reinforcement Learning to choose matching policies for dynamic kidney exchange \\
+Worked with John P. Dickerson at the Combinatorics and Algorithms for Real Problems R.E.U. (7\% acceptance rate)\\
 \end{tabular}
 
-%\emph{June 2017 -- August 2017 | College Park, MD}}
-%\vspace{\topsep} % Hacky fix for awkward extra vertical space
-%\begin{tightemize}
-%\item Did research with \textbf{\href{http://jpdickerson.com}{John P. Dickerson}} funded by the National Science Foundation (20/290 apps.) at the Combinatorics and Algorithms for Real Problems REU
-%
-%\end{tightemize}
-%
-\subsection{GW Computer Science Department | August 2016 - December 2018 }
+\subsection{GW Learning Technologies Research Group | \emph{Researcher} |  August 2016 - December 2017 }
 ~\begin{tabular}{@{~$\bullet$~~}l}
-Member, American Mathematical Society
+Use Natural Language Processing to generate reading comprehension questions from input passages\\
+Develop a mobile application and website using Play framework for adult learners to increase English literacy\\
+Adapt and improve reading comprehension question-generation algorithm in Java\\
+Identify high-quality datasets for training natural language processing algorithms and cleaned datasets using Python and R\\
 \end{tabular}
 
 %\descript{| Learning Assistant}
@@ -145,14 +155,13 @@ Member, American Mathematical Society
 
 \end{tabular}
 
-\section{Research}
+% \section{Research}
 
-\begin{itemize}\parskip=0cm
-% \item Since 1991 I have authored \ref{sumpapers} papers, chapters or books on statistical topics. A list of these appears on pages \pageref{papersstart}--\pageref{papersend}.
-\item 
-\item  My current research projects include forecasting electricity demand, forecasting large collections of time series, and strategies for improving forecasts through bagging and boosting.
-% \item I have produced \ref{sumsoftware} R packages as a result of my research. These are listed on page~\pageref{sumsoftware}.
-\end{itemize}
+% \begin{itemize}\parskip=0cm
+% % \item Since 1991 I have authored \ref{sumpapers} papers, chapters or books on statistical topics. A list of these appears on pages \pageref{papersstart}--\pageref{papersend}.
+% \item  My current research projects include forecasting electricity demand, forecasting large collections of time series, and strategies for improving forecasts through bagging and boosting.
+% % \item I have produced \ref{sumsoftware} R packages as a result of my research. These are listed on page~\pageref{sumsoftware}.
+% \end{itemize}
 
 %\clearpage
 
@@ -173,20 +182,23 @@ Member, American Mathematical Society
 
 %\clearpage
 
-      
+  
 \setlength{\bibitemsep}{1.8pt}
 
 \begin{publications}
-\printbib{papers}
+\printbib{conferences}
+\printbib{ws}
 %\printbib{inprogress}
 \end{publications}
 
 \section{Invited talks}
 
 \begin{compactitem}\itemsep=0.1cm
-\item Belz lecture, \emph{Forecasting and the importance of being uncertain}, Statistical Society of Australia, Melbourne, October 2006.
+\item \emph{The Diverse Cohort Selection Problem}, GW Chapter of the Association for Computing Machinery, Washington, February 2018.
+\end{compactitem}
+
+\begin{compactitem}\itemsep=0.1cm
 \item \emph{Recognizing Images of eating disorders with deep learning}, GW Dean's Council of Women in Technology, Washington, January 2018.
-\item Invited speaker, \emph{Advances in automatic time series forecasting}, Australian Statistics Conference, Adelaide, July 2012.
 \end{compactitem}
 
 \section{Poster Presentations}
@@ -208,7 +220,7 @@ The Diverse Cohort Selection Problem}, GW SEAS R\&D Showcase, Washington, Februa
 \section{Teaching}
 
 {\def\next{\\\\[-0.2cm]}\fontsize{10}{12pt}\selectfont
-\begin{tabular}{@{}lP{7.3cm}rr@{}}
+\begin{tabular}{@{}lP{6.3cm}lP{8.3cm}r@{}}
  %\toprule
 
 2018 	& 	Introduction to Software Development & \emph{Teaching Assistant } & George Washington University \next
@@ -225,17 +237,23 @@ The Diverse Cohort Selection Problem}, GW SEAS R\&D Showcase, Washington, Februa
 \section{Programming \& Technology}
 
 \begin{compactitem}\itemsep=0.1cm
-\item Invited speaker, \emph{Advances in automatic time series forecasting}, Australian Statistics Conference, Adelaide, July 2012.
+\item Languages: Python, Java, C, MATLAB, LaTeX, HTML, CSS, SQL, GAP, Bash \\
+\item Software: Mathematica, Git, PyTorch, Django
+\item Spoken Languages: Spanish (fluent), English (native)
 \end{compactitem}
+%language: 
 
+\section{Involvement and Service }
 
-\section{Membership of Associations}
-
-~\begin{tabular}{@{~$\bullet$~~}l}
-Member, Association for Computing Machinery\\
-%Member, American Mathematical Society\\
+~\begin{tabular}{@{~$\bullet$~~}l l l}
+2016-Present 	& Vice President   & GW Association for Computing Machinery\\
+2016-Present   &  Mentor  & SEAS Student Peer Advisory Network\\
+2017-2018	& Founder and Chair & GW Dean's Council of Women in Technology \\
+2015-2016     & Freshman Representative   & The Association of Queer Women and Allies
 \end{tabular}
 
+%2016-Present & Vice President   & \href{http://acm.seas.gwu.edu/}{GW Assoc. for Computing Machinery}\\
+%2016-Present   &  Mentor  & \href{https://www.seas.gwu.edu/student-mentor-program}{SEAS Student Peer Advisory Network}\\
 
 %\pagebreak
 
